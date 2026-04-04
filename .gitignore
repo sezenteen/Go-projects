@@ -1,0 +1,78 @@
+# =========================
+# Go build artifacts
+# =========================
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Go coverage
+*.cover
+coverage.out
+
+# =========================
+# Go modules
+# =========================
+go.sum
+*.mod
+
+# (OPTIONAL) usually you KEEP go.mod, but since you asked:
+go.mod
+
+# =========================
+# Vendor directory (optional)
+# =========================
+vendor/
+
+# =========================
+# IDE / Editor files
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Environment files
+# =========================
+.env
+.env.*
+
+# =========================
+# Custom / your tools
+# =========================
+.qodo/
+.qodo
+*.qodo
+
+# =========================
+# Git internal (not needed but you asked)
+# =========================
+.git/
+
+# =========================
+# Build folders
+# =========================
+bin/
+dist/
+build/
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/

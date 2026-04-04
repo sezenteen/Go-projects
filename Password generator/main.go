@@ -1,0 +1,24 @@
+package main
+
+import (
+	"crypto/rand"
+	"fmt"
+	"math/big"
+)
+
+const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()"
+
+func generateSecurePassword(length int) string {
+	password := make([]byte, length)
+
+	for i := range password {
+		num, _ := rand.Int(rand.Reader, big.NewInt(int64(len(charset))))
+		password[i] = charset[num.Int64()]
+	}
+
+	return string(password)
+}
+
+func main() {
+	fmt.Println("Secure Password:", generateSecurePassword(18))
+}
